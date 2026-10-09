@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact | Teddy Damm</title>
+
+    <meta
+        name="description"
+        content="Contact Teddy Damm, Structural Engineering PhD student at UC San Diego."
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <!-- =========================================================
+                         NAVIGATION
+    ========================================================== -->
+
+    <header class="site-header">
+
+        <a class="site-name" href="index.html">
+            Teddy Damm
+        </a>
+
+        <nav>
+            <a href="index.html#work">Projects</a>
+            <a href="index.html#research">Research</a>
+            <a href="about.html">About</a>
+            <a href="files/Theodore_Damm_Resume.pdf" target="_blank">Resume</a>
+            <a href="contact.html" class="nav-active">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================================
+                         CONTACT PAGE
+    ========================================================== -->
+
+    <main class="contact-page">
+
+        <section class="contact-hero">
+
+            <div class="contact-inner">
+
+                <div class="section-label">
+                    CONTACT
+                </div>
+
+                <h1>Get in touch.</h1>
+
+                <p class="contact-intro">
+                    I'm always interested in talking about engineering,
+                    research, aerospace, composites, vehicle development,
+                    or interesting hardware problems.
+                </p>
+
+
+                <div class="contact-grid">
+
+                    <!-- EMAIL -->
+
+                    <div class="contact-card">
+
+                        <span class="contact-card-label">
+                            EMAIL
+                        </span>
+
+                        <h2>
+                            tdamm@ucsd.edu
+                        </h2>
+
+                        <button
+                            class="contact-button"
+                            onclick="copyEmail(this)"
+                        >
+                            Copy email
+                        </button>
+
+                    </div>
+
+
+                    <!-- LINKEDIN -->
+
+                    <div class="contact-card">
+
+                        <span class="contact-card-label">
+                            LINKEDIN
+                        </span>
+
+                        <h2>
+                            Theodore Damm
+                        </h2>
+
+                        <a
+                            class="contact-button"
+                            href="https://www.linkedin.com/in/theodoredamm5151b178"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View LinkedIn →
+                        </a>
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="contact-card">
+
+                        <span class="contact-card-label">
+                            BASED IN
+                        </span>
+
+                        <h2>
+                            San Diego, California
+                        </h2>
+
+                        <p>
+                            Currently pursuing a PhD in Structural Engineering
+                            at UC San Diego.
+                        </p>
+
+                    </div>
+
+
+                    <!-- RESUME -->
+
+                    <div class="contact-card">
+
+                        <span class="contact-card-label">
+                            RESUME
+                        </span>
+
+                        <h2>
+                            Experience & Projects
+                        </h2>
+
+                        <a
+                            class="contact-button"
+                            href="files/Theodore_Damm_Resume.pdf"
+                            target="_blank"
+                        >
+                            View Resume →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+                           FOOTER
+    ========================================================== -->
+
+    <footer>
+
+        <div>
+            <h2>Let's build something.</h2>
+            <p class="footer-email">tdamm@ucsd.edu</p>
+        </div>
+
+        <div class="footer-right">
+            <p>San Diego, California</p>
+            <p>© 2026 Teddy Damm</p>
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+                         COPY EMAIL SCRIPT
+    ========================================================== -->
+
+    <script>
+
+        function copyEmail(button) {
+
+            const email = "tdamm@ucsd.edu";
+
+            navigator.clipboard.writeText(email).then(() => {
+
+                const originalText = button.textContent;
+
+                button.textContent = "Copied";
+
+                setTimeout(() => {
+                    button.textContent = originalText;
+                }, 1600);
+
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>

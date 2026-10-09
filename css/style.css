@@ -1240,3 +1240,617 @@ footer a {
         max-height: none;
     }
 }
+
+/* ============================================================
+                         CONTACT PAGE
+============================================================ */
+
+.contact-page {
+    min-height: calc(100vh - 150px);
+
+    background: var(--light);
+}
+
+.contact-hero {
+    padding: 160px 7vw 110px;
+}
+
+.contact-inner {
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+.contact-hero h1 {
+    margin: 0;
+
+    font-size: clamp(4rem, 8vw, 7rem);
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+}
+
+.contact-intro {
+    max-width: 720px;
+
+    margin: 28px 0 65px;
+
+    color: var(--muted);
+
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+
+/* ============================================================
+                         CONTACT CARDS
+============================================================ */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.contact-card {
+    min-height: 260px;
+
+    padding: 38px;
+
+    background: white;
+
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.contact-card-label {
+    color: var(--muted);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.contact-card h2 {
+    margin: 28px 0 14px;
+
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+.contact-card p {
+    max-width: 420px;
+
+    color: var(--muted);
+}
+
+.contact-button {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 10px 17px;
+
+    border: 1px solid var(--text);
+
+    color: var(--text);
+    background: transparent;
+
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.contact-button:hover {
+    color: white;
+    background: var(--text);
+}
+
+.nav-active {
+    opacity: 1;
+    font-weight: 700;
+}
+
+.footer-email {
+    margin: 0;
+
+    color: rgba(255,255,255,0.7);
+}
+
+
+/* ============================================================
+                    CONTACT PAGE MOBILE
+============================================================ */
+
+@media (max-width: 800px) {
+
+    .contact-hero {
+        padding: 125px 6vw 75px;
+    }
+
+    .contact-intro {
+        margin-bottom: 45px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        min-height: auto;
+
+        padding: 32px 26px;
+    }
+
+}
+
+/* ============================================================
+                         ABOUT PAGE
+============================================================ */
+
+.about-page {
+    background: white;
+}
+
+
+/* ============================================================
+                         ABOUT HERO
+============================================================ */
+
+.about-page-hero {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+
+    min-height: 88vh;
+
+    padding-top: 68px;
+
+    background: var(--light);
+}
+
+.about-page-hero-image {
+    overflow: hidden;
+}
+
+.about-page-hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-page-hero-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px 7vw;
+}
+
+.about-page-hero-copy h1 {
+    margin: 0 0 30px;
+
+    font-size: clamp(3.6rem, 6vw, 6.3rem);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+}
+
+.about-page-hero-copy p {
+    max-width: 560px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+
+/* ============================================================
+                         PLACES
+============================================================ */
+
+.about-places {
+    padding: 100px 7vw;
+}
+
+.about-places-heading {
+    max-width: 850px;
+
+    margin-bottom: 55px;
+}
+
+.about-places-heading h2 {
+    margin: 0;
+
+    font-size: clamp(2.6rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+}
+
+.about-place-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.about-place {
+    padding: 30px;
+
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.about-place span {
+    color: var(--muted);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.about-place h3 {
+    margin: 35px 0 0;
+
+    font-size: 1.6rem;
+}
+
+.about-place p {
+    margin: 2px 0 0;
+
+    color: var(--muted);
+}
+
+
+/* ============================================================
+                       FEATURE SECTIONS
+============================================================ */
+
+.about-feature {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+
+    min-height: 680px;
+}
+
+.about-feature-dark {
+    color: white;
+    background: var(--navy);
+}
+
+.about-feature-light {
+    grid-template-columns: 1.2fr 0.8fr;
+
+    background: var(--light);
+}
+
+.about-feature-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px 7vw;
+}
+
+.about-feature-copy h2 {
+    margin: 0 0 25px;
+
+    font-size: clamp(2.7rem, 5vw, 4.7rem);
+    line-height: 1.03;
+    letter-spacing: -0.045em;
+}
+
+.about-feature-copy p {
+    max-width: 520px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.75;
+}
+
+.about-feature-dark .about-feature-copy p {
+    color: rgba(255,255,255,0.72);
+}
+
+.about-feature-images {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 8px;
+
+    padding: 8px;
+}
+
+.about-feature-images figure {
+    margin: 0;
+
+    overflow: hidden;
+}
+
+.about-feature-images img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-image-large {
+    grid-row: span 1;
+}
+
+.about-build-images {
+    grid-template-columns: 1fr 0.8fr;
+}
+
+
+/* ============================================================
+                         COLLAGE
+============================================================ */
+
+.about-gallery-section {
+    padding: 105px 7vw;
+}
+
+.about-gallery-heading {
+    max-width: 900px;
+
+    margin-bottom: 55px;
+}
+
+.about-gallery-heading h2 {
+    margin: 0;
+
+    font-size: clamp(2.8rem, 5vw, 4.7rem);
+    line-height: 1.03;
+    letter-spacing: -0.045em;
+}
+
+.about-collage {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr 1fr;
+    grid-auto-rows: 290px;
+    gap: 15px;
+}
+
+.about-collage figure {
+    position: relative;
+
+    margin: 0;
+
+    overflow: hidden;
+}
+
+.about-collage img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-collage-tall {
+    grid-row: span 2;
+}
+
+.about-collage-wide {
+    grid-column: span 2;
+}
+
+.about-collage figcaption,
+.about-travel figcaption {
+    position: absolute;
+    left: 16px;
+    bottom: 14px;
+
+    padding: 5px 9px;
+
+    color: white;
+    background: rgba(15, 25, 35, 0.62);
+
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* ============================================================
+                         TRAVEL
+============================================================ */
+
+.about-travel {
+    padding: 100px 7vw;
+
+    background: var(--light);
+}
+
+.about-travel-heading {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 50px;
+
+    align-items: end;
+
+    margin-bottom: 50px;
+}
+
+.about-travel-heading h2 {
+    margin: 0;
+
+    font-size: clamp(2.7rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+}
+
+.about-travel-heading > p {
+    margin: 0;
+
+    color: var(--muted);
+}
+
+.about-travel-grid {
+    display: grid;
+    grid-template-columns: 0.75fr 0.75fr 1.5fr;
+    gap: 15px;
+}
+
+.about-travel-grid figure {
+    position: relative;
+
+    min-height: 470px;
+
+    margin: 0;
+
+    overflow: hidden;
+}
+
+.about-travel-grid img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ============================================================
+                        CLOSING IMAGE
+============================================================ */
+
+.about-closing {
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.about-closing img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 90%;
+    display: block;
+}
+
+.about-closing-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8,15,24,0.67),
+            rgba(8,15,24,0.14)
+        );
+}
+
+.about-closing-copy {
+    position: absolute;
+    left: 7vw;
+    bottom: 12vh;
+
+    max-width: 700px;
+}
+
+.about-closing-copy p {
+    margin: 0 0 15px;
+
+    font-size: 0.73rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.about-closing-copy h2 {
+    margin: 0;
+
+    font-size: clamp(3rem, 6vw, 5.8rem);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+}
+
+
+/* ============================================================
+                         ABOUT MOBILE
+============================================================ */
+
+@media (max-width: 800px) {
+
+    .about-page-hero {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+    }
+
+    .about-page-hero-image {
+        height: 62vh;
+    }
+
+    .about-page-hero-copy {
+        padding: 60px 6vw 75px;
+    }
+
+    .about-places {
+        padding: 75px 6vw;
+    }
+
+    .about-place-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-feature,
+    .about-feature-light {
+        grid-template-columns: 1fr;
+    }
+
+    .about-feature-copy {
+        padding: 65px 6vw;
+    }
+
+    .about-feature-images,
+    .about-build-images {
+        min-height: 600px;
+    }
+
+    .about-gallery-section,
+    .about-travel {
+        padding: 75px 6vw;
+    }
+
+    .about-collage {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 260px;
+    }
+
+    .about-collage-wide {
+        grid-column: span 2;
+    }
+
+    .about-travel-heading {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-travel-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-travel-wide {
+        grid-column: span 2;
+    }
+
+    .about-travel-grid figure {
+        min-height: 380px;
+    }
+
+    .about-closing {
+        height: 65vh;
+    }
+
+}
