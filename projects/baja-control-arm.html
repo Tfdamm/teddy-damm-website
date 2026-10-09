@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Baja SAE Lower Control Arm Redesign | Teddy Damm</title>
+
+    <meta
+        name="description"
+        content="Baja SAE suspension development by Teddy Damm using measured vehicle loads, SolidWorks FEA, fabrication, and real-world testing."
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body class="project-page">
+
+    <!-- =========================================================
+                         NAVIGATION
+    ========================================================== -->
+
+    <header class="site-header">
+
+        <a class="site-name" href="../index.html">
+            Teddy Damm
+        </a>
+
+        <nav>
+            <a href="../index.html#work">Projects</a>
+            <a href="../index.html#research">Research</a>
+            <a href="../index.html#about">About</a>
+            <a href="../files/Theodore_Damm_Resume.pdf" target="_blank">Resume</a>
+            <a href="mailto:tdamm@ucsd.edu">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+                         PROJECT HERO
+        ====================================================== -->
+
+        <section class="project-hero">
+
+            <div class="project-hero-inner">
+
+                <a class="back-link" href="../index.html#work">
+                    ← Back to Projects
+                </a>
+
+                <p class="project-eyebrow">
+                    VEHICLE TESTING • FEA • DESIGN • FABRICATION
+                </p>
+
+                <h1>
+                    Baja SAE Lower<br>
+                    Control Arm Redesign
+                </h1>
+
+                <p class="project-lead">
+                    Using measured vehicle loads, structural analysis,
+                    fabrication, and real-world testing to develop a lightweight
+                    welded sheet-metal suspension component for an off-road race vehicle.
+                </p>
+
+                <div class="project-meta">
+
+                    <div>
+                        <span>ROLE</span>
+                        <strong>Suspension Design / Team Lead</strong>
+                    </div>
+
+                    <div>
+                        <span>ORGANIZATION</span>
+                        <strong>Wisconsin Baja SAE</strong>
+                    </div>
+
+                    <div>
+                        <span>FOCUS</span>
+                        <strong>Suspension Structures</strong>
+                    </div>
+
+                    <div>
+                        <span>PERIOD</span>
+                        <strong>2019–2022</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+                         COMPETITION ENVIRONMENT
+        ====================================================== -->
+
+        <section class="project-full-image">
+
+            <img
+                src="../images/projects/baja-control-arm/P_baja_competition-car.jpg"
+                alt="Wisconsin Baja SAE vehicle during an off-road competition"
+            >
+
+            <p class="figure-caption project-full-image-caption">
+                Baja SAE places lightweight student-designed vehicles in rough
+                off-road environments where suspension components must survive
+                impacts, jumps, mud, rocks, and highly variable loading.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+                         THE CHALLENGE
+        ====================================================== -->
+
+        <section class="project-section">
+
+            <div class="project-two-column">
+
+                <div class="project-copy">
+
+                    <div class="section-label">
+                        THE CHALLENGE
+                    </div>
+
+                    <h2>
+                        Make it lighter without making it fragile.
+                    </h2>
+
+                    <p>
+                        The lower control arm is one of the primary structural
+                        links between the chassis and upright, making it a natural
+                        target for mass reduction but a poor place to sacrifice
+                        durability.
+                    </p>
+
+                    <p>
+                        Baja suspension hardware sees far more than clean,
+                        predictable loading. Jumps, wheel impacts, rocks, terrain
+                        irregularities, and driver inputs create transient load
+                        cases that are difficult to represent perfectly in a
+                        simplified structural model.
+                    </p>
+
+                    <p>
+                        The design therefore needed to balance mass, strength,
+                        buckling resistance, manufacturability, impact tolerance,
+                        and the reality of student-built off-road racing.
+                    </p>
+
+                </div>
+
+
+                <div class="project-figure">
+
+                    <img
+                        src="../images/projects/baja-control-arm/P_baja_suspension-assembly.jpg"
+                        alt="Baja SAE chassis and front suspension assembly"
+                    >
+
+                    <p class="figure-caption">
+                        Suspension and chassis integration during vehicle development.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+                         DEVELOPING LOADS
+        ====================================================== -->
+
+        <section class="project-section project-section-light">
+
+            <div class="project-section-heading">
+
+                <div class="section-label">
+                    DEVELOPING REAL LOADS
+                </div>
+
+                <h2>
+                    Measure first. Model second.
+                </h2>
+
+                <p>
+                    Rather than relying only on assumed suspension loads, we
+                    instrumented the vehicle with strain gauges and accelerometers
+                    and collected data while driving over representative obstacles.
+                    Those measurements were used to estimate structural loads for
+                    subsequent analysis.
+                </p>
+
+            </div>
+
+
+            <div class="baja-workflow">
+
+                <div class="baja-workflow-item">
+                    <span>01</span>
+                    <h3>Vehicle Testing</h3>
+                    <p>
+                        Drive the vehicle over representative off-road obstacles.
+                    </p>
+                </div>
+
+                <div class="baja-workflow-arrow">→</div>
+
+                <div class="baja-workflow-item">
+                    <span>02</span>
+                    <h3>Instrumentation</h3>
+                    <p>
+                        Measure strain and acceleration during real vehicle events.
+                    </p>
+                </div>
+
+                <div class="baja-workflow-arrow">→</div>
+
+                <div class="baja-workflow-item">
+                    <span>03</span>
+                    <h3>Load Development</h3>
+                    <p>
+                        Convert measured response into suspension loading estimates.
+                    </p>
+                </div>
+
+                <div class="baja-workflow-arrow">→</div>
+
+                <div class="baja-workflow-item">
+                    <span>04</span>
+                    <h3>FEA</h3>
+                    <p>
+                        Use the resulting loads to guide structural redesign.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+                         DESIGN
+        ====================================================== -->
+
+        <section class="project-section">
+
+            <div class="project-two-column project-two-column-reverse">
+
+                <div class="project-figure">
+
+                    <img
+                        src="../images/projects/baja-control-arm/P_baja_control-arm-cad.jpg"
+                        alt="SolidWorks CAD model of a lightweight welded sheet-metal Baja SAE lower control arm"
+                    >
+
+                    <p class="figure-caption">
+                        SolidWorks model of the redesigned lower control arm.
+                    </p>
+
+                </div>
+
+
+                <div class="project-copy">
+
+                    <div class="section-label">
+                        STRUCTURAL REDESIGN
+                    </div>
+
+                    <h2>
+                        From conventional structure to lightweight sheet metal.
+                    </h2>
+
+                    <p>
+                        I used the developed suspension loads in iterative
+                        SolidWorks FEA to redesign the lower control arm as a
+                        welded sheet-metal box structure.
+                    </p>
+
+                    <p>
+                        The geometry was repeatedly adjusted to remove unnecessary
+                        material while maintaining load paths, local stiffness,
+                        buckling resistance, and practical weldability.
+                    </p>
+
+                    <p>
+                        Large lightening features reduced mass while the folded
+                        and welded architecture provided the section depth needed
+                        to carry suspension loads efficiently.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+                         SYSTEM INTEGRATION
+        ====================================================== -->
+
+        <section class="project-section project-section-dark">
+
+            <div class="project-two-column">
+
+                <div class="project-copy">
+
+                    <div class="section-label section-label-light">
+                        VEHICLE INTEGRATION
+                    </div>
+
+                    <h2>
+                        A suspension component never works alone.
+                    </h2>
+
+                    <p>
+                        The control arm geometry had to work with the upright,
+                        rod-end interfaces, shock location, steering geometry,
+                        chassis packaging, and the practical constraints of
+                        fabricating and assembling the complete suspension.
+                    </p>
+
+                    <p>
+                        Baja was valuable because every design decision eventually
+                        had to fit into a real vehicle rather than remaining an
+                        isolated CAD model.
+                    </p>
+
+                </div>
+
+
+                <div class="project-figure">
+
+                    <img
+                        src="../images/projects/baja-control-arm/P_baja_upright.jpg"
+                        alt="Machined aluminum Baja SAE suspension upright"
+                    >
+
+                    <p class="figure-caption figure-caption-dark">
+                        Machined upright used as part of the vehicle's suspension assembly.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+                         SLOW MOTION VIDEO
+        ====================================================== -->
+
+        <section class="project-section">
+
+            <div class="project-section-heading">
+
+                <div class="section-label">
+                    REAL-WORLD VALIDATION
+                </div>
+
+                <h2>
+                    Eventually, the vehicle has to leave the ground.
+                </h2>
+
+                <p>
+                    Vehicle testing and competition exposed the suspension to
+                    load cases that are difficult to recreate completely in a
+                    static model. The slow-motion footage below shows the kind of
+                    dynamic environment the suspension was designed to survive.
+                </p>
+
+            </div>
+
+
+            <div class="baja-video-wide">
+
+                <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls
+                >
+                    <source
+                        src="../videos/baja-control-arm/P_baja_slow-motion-jump.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support the video tag.
+                </video>
+
+                <p class="figure-caption">
+                    Slow-motion suspension response during a vehicle jump.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+                         TRANSIENT LOADS
+        ====================================================== -->
+
+        <section class="project-section project-section-light">
+
+            <div class="project-section-heading">
+
+                <div class="section-label">
+                    TRANSIENT LOADING
+                </div>
+
+                <h2>
+                    The loads you remember are rarely the clean ones.
+                </h2>
+
+                <p>
+                    Off-road vehicles experience awkward events that do not fit
+                    neatly into nominal load cases. Wheel impacts, uneven landings,
+                    local strikes, and large transient accelerations can dominate
+                    real-world durability.
+                </p>
+
+            </div>
+
+
+            <div class="baja-transient-grid">
+
+                <figure class="baja-vertical-video">
+
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        controls
+                    >
+                        <source
+                            src="../videos/baja-control-arm/P_baja_near-flip.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <figcaption>
+                        A less controlled example of the vehicle encountering a
+                        severe transient event during testing.
+                    </figcaption>
+
+                </figure>
+
+
+                <figure class="baja-damage-figure">
+
+                    <img
+                        src="../images/projects/baja-control-arm/P_baja_control-arm-damaged.jpg"
+                        alt="Used Baja SAE lower control arm showing local denting from off-road service"
+                    >
+
+                    <figcaption>
+                        The fabricated arm after real off-road use, including
+                        local impact damage accumulated during service.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+                         LESSON
+        ====================================================== -->
+
+        <section class="project-callout">
+
+            <div>
+
+                <div class="section-label section-label-light">
+                    ENGINEERING LESSON
+                </div>
+
+                <h2>
+                    Simulation is a design input, not an absolute answer.
+                </h2>
+
+                <p>
+                    FEA was essential for understanding the structure and
+                    removing unnecessary mass, but Baja reinforced that a
+                    successful design also has to tolerate imperfect terrain,
+                    manufacturing variation, localized damage, and transient
+                    events that are difficult to capture in a clean model.
+                </p>
+
+                <p>
+                    The project changed the way I think about optimization:
+                    minimizing predicted stress or mass is not enough if the
+                    component becomes too sensitive to the real environment
+                    in which it has to operate.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+                         COMPETITION
+        ====================================================== -->
+
+        <section class="project-section">
+
+            <div class="project-section-heading">
+
+                <div class="section-label">
+                    COMPETITION
+                </div>
+
+                <h2>
+                    Design work does not stop when the event starts.
+                </h2>
+
+                <p>
+                    Baja competitions were full-vehicle engineering exercises.
+                    Fabrication, repair, troubleshooting, and design judgment
+                    continued in the field when the car broke, conditions changed,
+                    or a problem appeared that had never shown up in the shop.
+                </p>
+
+            </div>
+
+
+            <div class="project-image-grid two-up baja-competition-grid">
+
+                <figure>
+
+                    <img
+                        src="../images/projects/baja-control-arm/P_baja_competition-welding.jpg"
+                        alt="Baja SAE vehicle being welded and repaired during competition"
+                    >
+
+                    <figcaption>
+                        Field fabrication and repair during competition.
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img
+                        src="../images/projects/baja-control-arm/P_baja_teddy-with-car.jpg"
+                        alt="Teddy Damm standing next to the Wisconsin Baja SAE vehicle at competition"
+                    >
+
+                    <figcaption>
+                        Wisconsin Baja SAE during a particularly muddy competition.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+                         NEXT PROJECT
+        ====================================================== -->
+
+        <section class="project-next">
+
+            <a href="../index.html#work">
+
+                <span>BACK TO</span>
+
+                <h2>
+                    Selected Projects →
+                </h2>
+
+            </a>
+
+        </section>
+
+
+        <!-- =====================================================
+                            FOOTER
+        ====================================================== -->
+
+        <footer>
+
+            <div>
+                <h2>Let's build something.</h2>
+
+                <a href="mailto:tdamm@ucsd.edu">
+                    tdamm@ucsd.edu
+                </a>
+            </div>
+
+            <div class="footer-right">
+                <p>San Diego, California</p>
+                <p>© 2026 Teddy Damm</p>
+            </div>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
