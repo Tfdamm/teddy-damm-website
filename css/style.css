@@ -1853,4 +1853,108 @@ footer a {
         height: 65vh;
     }
 
+}/* ============================================================
+                      MORGAN 34 PROJECT PAGE
+============================================================ */
+
+.morgan-sanding-figure {
+    max-width: 500px;
+    justify-self: center;
+}
+
+.morgan-sanding-figure img {
+    width: 100%;
+    height: auto;
+}
+
+.morgan-profile-figure {
+    max-width: 560px;
+    justify-self: center;
+}
+
+.morgan-profile-figure img {
+    width: 100%;
+    height: auto;
+}
+
+.morgan-repair-figure {
+    max-width: 640px;
+    justify-self: center;
+}
+
+.morgan-repair-figure img {
+    width: 100%;
+    max-height: 720px;
+    object-fit: contain;
+    background: var(--light);
+}
+
+.morgan-bottom-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.morgan-bottom-grid img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.morgan-refit-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.morgan-refit-grid img {
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+}
+
+.morgan-refit-grid figure:first-child img {
+    object-position: center 52%;
+}
+
+.morgan-refit-grid figure:last-child img {
+    object-position: center 42%;
+}
+
+.morgan-ending-image img {
+    max-height: none;
+    height: auto;
+    object-fit: contain;
+    background: var(--navy);
+}
+
+@media (max-width: 800px) {
+
+    .morgan-sanding-figure,
+    .morgan-profile-figure,
+    .morgan-repair-figure {
+        max-width: none;
+    }
+
+    .morgan-bottom-grid,
+    .morgan-refit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .morgan-bottom-grid img,
+    .morgan-refit-grid img {
+        height: auto;
+    }
+}
+.morgan-boat-context h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.05;
+}
+
+.morgan-boat-context figure {
+    max-width: 520px;
+}
+
+.morgan-boat-context img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
